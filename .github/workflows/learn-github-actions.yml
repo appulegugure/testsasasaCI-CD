@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: $HELLO = "こんにちわ"
+      - run: $HELLO="こんにちわ"
       - run: echo $HELLO
       - run: npm install -g bats
       - run: bats -v
